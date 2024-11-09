@@ -188,12 +188,7 @@ def insert_data(
     conn.commit()
 
 def populate_database(database_path: str = 'data/database.db') -> None:
-    """
-    Create and populate the SQLite database with sample data.
-
-    Parameters:
-        database_path (str): Path to the SQLite database file.
-    """
+    """Create and populate the SQLite database with sample data."""
     # Ensure the database directory exists
     os.makedirs(os.path.dirname(database_path), exist_ok=True)
 
